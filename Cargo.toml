@@ -1,0 +1,5 @@
+[workspace]
+members = [
+    "src/pesatoken-icp-backend"
+]
+resolver = "2"

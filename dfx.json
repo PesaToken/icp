@@ -1,0 +1,27 @@
+{
+  "canisters": {
+    "pesatoken-icp-backend": {
+      "candid": "src/pesatoken-icp-backend/pesatoken-icp-backend.did",
+      "package": "pesatoken-icp-backend",
+      "type": "rust"
+    },
+    "pesatoken-icp-frontend": {
+      "dependencies": [
+        "pesatoken-icp-backend"
+      ],
+      "source": [
+        "src/pesatoken-icp-frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "pesatoken-icp-frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
