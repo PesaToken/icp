@@ -43,3 +43,11 @@ PesaToken is a crypto utility platform designed to bridge the gap between digita
 - Internet Computer local replica running:  
   ```bash
   dfx start --background
+
+  cd frontend
+  npm install
+  npm run build
+  cd ..
+
+  dfx deploy
+
